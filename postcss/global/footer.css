@@ -1,0 +1,79 @@
+.footer {
+	position: relative;
+
+	padding: 2rem 0 1rem;
+
+	color: white;
+
+	background: #8a8c94 url(./../img/footer-dark-bg.png);
+
+	&::before {
+		position: absolute;
+		top: 0;
+
+		width: 100%;
+		height: 20px;
+
+		content: "";
+		background: $blue;
+	}
+}
+
+.footer-contact {
+	position: relative;
+}
+
+.footer-contact__header {
+	padding: 1rem 4rem 2rem;
+
+	font-family: $cookie;
+	font-size: 1.5rem;
+	
+	&::before {
+		position: absolute;
+		top: 0.3rem;
+		left: 1rem;
+
+		width: 32px;
+		height: 32px;
+
+		content: "";
+		background-image: url(./../img/bird.png);
+	}
+}
+
+.footer-contact__link {
+	position: relative;
+
+	padding: 1rem 4rem;
+
+	display: block;
+
+	font-family: $tahoma;
+	font-size: 0.8rem;
+
+	&::before {
+		position: absolute;
+		top: 0.1rem;
+		left: 1rem;
+
+		width: 38px;
+		height: 38px;
+
+		content: "";
+
+		background-size: cover;
+	}
+
+	&--tel::before {
+		background-image: url(./../img/phone.png);
+	}
+
+	&--fax::before {
+		background-image: url(./../img/fax.png);
+	}
+
+	&--mail::before {
+		background-image: url(./../img/mail.png);
+	}
+}
