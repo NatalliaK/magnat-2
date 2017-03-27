@@ -1,0 +1,7 @@
+.btn-more {
+	padding: 0.3rem 1rem;
+
+	border: 1px solid #aeaeae;
+	border-radius: 5px;
+	background: linear-gradient(to bottom, $light-grey, $dark-grey);
+}

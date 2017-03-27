@@ -1,0 +1,161 @@
+.main-nav {
+	position: relative;
+	z-index: 5;
+
+	width: 100%;
+
+	text-align: center;
+	font-size: 20px;
+}
+
+.main-nav__top-block {
+	font-size: 40px;
+	line-height: 88px;
+
+	border-bottom: 1px solid $grey-txt;
+	box-shadow: 0 0 3px $grey-txt;
+
+	h1 {
+		font-family: $cookie;
+		font-size: 55px;
+		text-shadow: 0 0 9px black;
+	}
+}
+
+.main-nav__item {
+	border-bottom: 1px solid $grey-txt;
+	box-shadow: 0 0 3px $grey-txt;
+
+	line-height: 63px;
+
+	a {
+		display: block;
+
+text-shadow: 0 0 3px black;
+		
+		&:active {
+			 color: lime;
+		}
+
+		&:not([href]) {
+			color: $lime;
+			border-bottom: 1px solid $lime;
+			box-shadow: 0 1px 4px $lime;
+		}
+	}
+}
+
+.main-nav__item:not(a[href]) {
+	color: $lime;
+}
+
+.main-nav__toggle {
+	position: absolute;
+	top: 33px;
+	right: 20px;
+	z-index: 2;
+
+	display: block;
+
+	width: 50px;
+	height: 25px;
+
+	font-size: 0;
+
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	outline: transparent;
+
+&:hover {
+	 top: 33px;
+	 right: 20px;
+ }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 50px;
+	height: 3px;
+
+	background-color: $grey-txt;
+	box-shadow: 0 10px 0 0 $grey-txt,
+	0 20px 0 0 $grey-txt;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+	top: 0;
+
+	background-color: $grey-txt;
+	box-shadow: 0 10px 0 0 $grey-txt,
+	0 20px 0 0 $grey-txt;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+	top: 0;
+	right: 0;
+
+	background-color: $grey-txt;
+	box-shadow: 0 10px 0 0 $grey-txt,
+	0 20px 0 0 $grey-txt;
+}
+
+.main-nav--opened .main-nav__toggle {
+	top: 33px;
+	right: 20px;
+
+	width: 25px;
+
+&::before,
+&::after {
+	 content: "";
+	 position: absolute;
+	 right: -3px;
+	 top: 10px;
+
+	 width: 30px;
+	 height: 4px;
+
+	 background-color: $grey-txt;
+ }
+
+&::before {
+	 transform: rotate(45deg);
+	 box-shadow: none;
+ }
+
+&::after {
+	 transform: rotate(-45deg);
+ }
+
+&:hover::before,
+&:hover::after {
+	 top: 10px;
+	 right: -3px;
+
+	 background-color: $grey-txt;
+ }
+
+&:active::before,
+&:active::after {
+	 top: 10px;
+
+	 background-color: $grey-txt;
+ }
+}
+
+.main-nav--closed .main-nav__item {
+	display: none;
+}
+
+.main-nav--no-js .main-nav__toggle {
+	display: none;
+}
+
+.main-nav--no-js .main-nav__item {
+	display: block;
+}
