@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:tel="http://www.w3.org/1999/xhtml" xmlns:mailto="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -133,7 +133,16 @@
 			</section>
 		</div>
 	</main>
-	<footer></footer>
+	<footer class="footer">
+		<div class="footer-contact">
+			<h3 class="footer-contact__header">Contact us</h3>
+			<ul class="footer-contact__list">
+				<li class="footer-contact__item"><a href="tel:888-5555" class="footer-contact__link  footer-contact__link--tel">888-5555</a></li>
+				<li class="footer-contact__item"><a href="tel:888-5556" class="footer-contact__link  footer-contact__link--fax">888-5556</a></li>
+				<li class="footer-contact__item"><a href="mailto:yourmail@mail.com" class="footer-contact__link  footer-contact__link--mail">youremail@email.com</a></li>
+			</ul>
+		</div>
+	</footer>
 	<script>
 		var navMain = document.querySelector('.main-nav');
 		var navToggle = document.querySelector('.main-nav__toggle');
