@@ -1,0 +1,23 @@
+.review {
+	padding: 1.5rem;
+
+	font-family: $tahoma;
+
+	border-bottom: 1px solid $grey-txt;
+	box-shadow: 0 0 3px rgba(150, 150, 150, .5);
+	background-color: rgba(227, 229, 230, .5);
+}
+
+.review__blockquote {
+	padding-bottom: 0.3rem;
+
+	line-height: 1.1rem;
+
+	font-size: 0.9rem;
+	color: #151616;
+}
+
+.review__cite {
+	font-size: 0.7rem;
+	color: #50678b;
+}

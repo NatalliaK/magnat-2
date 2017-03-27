@@ -1,0 +1,14 @@
+@import "variables.css";
+@import "global/reset.css";
+@import "global/fonts.css";
+@import "global/total.css";
+@import "global/page-header.css";
+@import "global/main-nav.css";
+@import "global/carousel.css";
+@import "global/slider.css";
+@import "global/btn.css";
+@import "global/main.css";
+@import "block/review.css";
+@import "block/about.css";
+@import "block/article.css";
+@import "block/our-service.css";

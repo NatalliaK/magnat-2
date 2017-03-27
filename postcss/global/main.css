@@ -1,0 +1,42 @@
+.main {
+	background-image: url(./../img/main-bg.png);
+}
+
+.main__header {
+	padding: 1.5rem 2rem;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	font-family: $tahoma;
+	font-size: 12px;
+	line-height: 1.5;
+	color: $grey-txt-cursive;
+
+	background-color: $blue;
+	box-shadow: 0 0 12px #000;
+}
+
+.main__header-text {
+	padding-bottom: 1rem;
+}
+
+.main__header-button {
+	margin: auto;
+	padding: 0.6rem 3rem;
+	min-width: 50%;
+
+	text-transform: capitalize;
+	text-align: center;
+	color: $grey-txt-cursive;
+
+	border: none;
+	border-radius: 6px;
+	background-color: $lime;
+	background: linear-gradient(to bottom, $light-lime, $dark-lime);
+}
+
+.main__wrap {
+	display: flex;
+	flex-wrap: wrap;
+}

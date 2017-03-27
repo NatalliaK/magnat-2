@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "Helvetica";
+	src: url(../fonts/BebasNeue.woff),
+			url(../fonts/BebasNeue.woff2);
+}
+
+@font-face {
+	font-family: "Cookie-Regular";
+	src: url(../fonts/Cookie-Regular.woff),
+			url(../fonts/Cookie-Regular.woff2);
+}
+
+@font-face {
+	font-family: "Tahoma";
+	src: url(../fonts/Tahoma-Regular.woff),
+			url(../fonts/Tahoma-Regular.woff2);
+}
+
+$bebas: "Helvetica", Helvetica, Arial, sans-serif;
+$cookie: "Cookie-Regular", TrueType, Cookie, cursive, sans-serif;
+$tahoma: "Tahoma", Tahoma, Verdana, sans-serif;
