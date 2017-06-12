@@ -37,20 +37,6 @@
 	font-size: 0.9rem;
 }
 
-.img-wrap {
-	position: relative;
-
-	margin: 1rem auto;
-
-	order: 2;
-
-	&:hover {
-		position: static;
-
-		margin: 1rem auto;
-	}
-}
-
 .our-service__img {
 	cursor: pointer;
 
@@ -171,4 +157,22 @@
 	&::after {
 		right: 0.3rem;
 	}
+}
+
+@media (min-width: $big-mob) {
+	.our-service__bottom-link {
+		&::before,
+		&::after {
+			width: 26%;
+		}
+	}
+}
+
+@media (min-width: $tablet) {
+	.our-service__bottom-link {
+&::before,
+&::after {
+	 width: 34%;
+ }
+}
 }

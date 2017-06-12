@@ -21,3 +21,29 @@
 	font-size: 0.7rem;
 	color: #50678b;
 }
+
+.review__social {
+	display: none;
+}
+
+@media (min-width: $tablet) {
+	.review__social {
+		margin-top: 15px;
+		flex-basis: 100%;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		background: #f7f7f7;
+		border: 1px solid #bdbcbd;
+	}
+
+	.review__link {
+		line-height: 85px;
+
+	img {
+		vertical-align: middle;
+	}
+}
+}

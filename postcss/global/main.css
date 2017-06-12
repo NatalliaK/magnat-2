@@ -40,3 +40,19 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+
+@media (min-width: $tablet) {
+	.main__header {
+		padding: 1rem 2rem;
+
+		align-items: center;
+	}
+
+	.main__header-text {
+		padding-bottom: 0;
+	}
+
+	.main__header-button {
+		min-width: auto;
+	}
+}

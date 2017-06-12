@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:tel="http://www.w3.org/1999/xhtml" xmlns:mailto="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,7 @@
 		<div class="page-header__header">
 			<nav class="main-nav  main-nav--closed  main-nav--no-js">
 				<div class="main-nav__top-block">
+					<img class="main-nav__logo" src="img/logo.png" alt="logo">
 					<h1>Magnate</h1>
 					<button class="main-nav__toggle" type="button"></button>
 				</div>
@@ -34,7 +35,7 @@
 				<input class="slider__input  slider__slide1" type="radio" name="carousel" id="carousel-1" aria-hidden="true" hidden="">
 				<div class="carousel__item  carousel__item--1">
 					<h3 class="page-header__title3">Lorest Nesto Magnust Quist Opus</h3>
-					<p class="page-header__text">Phasellus convallis massa vitae purus tincidunt sed faucibus ligula dignissim. Suspendisse ac velit congue eros faucibus mollis ornare eu diam. Cras vehicula bibendum velit in venenatis. </p>
+					<p class="page-header__text">Phasellus convallis massa vitae purus tincidunt sed faucibus ligula dignissim. Suspendisse ac velit congue eros faucibus mollis ornare eu diam. Cras vehicula bibendum velit in venenatis.</p>
 				</div>
 
 				<input class="slider__input  slider__slide2" type="radio" name="carousel" id="carousel-2" aria-hidden="true" hidden="" checked="checked">
@@ -56,13 +57,13 @@
 			<label for="carousel-1" class="carousel-control next control-3"></label>
 			<ol class="carousel-indicators">
 				<li>
-					<label for="carousel-1" class="carousel-bullet">•</label>
+					<label for="carousel-1" class="carousel-bullet"><img src="img/1.png" alt="1"></label>
 				</li>
 				<li>
-					<label for="carousel-2" class="carousel-bullet">•</label>
+					<label for="carousel-2" class="carousel-bullet"><img src="img/2.png" alt="2"></label>
 				</li>
 				<li>
-					<label for="carousel-3" class="carousel-bullet">•</label>
+					<label for="carousel-3" class="carousel-bullet"><img src="img/3.png" alt="3"></label>
 				</li>
 			</ol>
 			</div>
@@ -78,27 +79,34 @@
 				Praesent tortor arcu, posuere eu gravida quis, porta
 				quis mi. Pellentesque habitant morbi tristique&Prime;</blockquote>
 			<cite class="review__cite">- Joe Schome Company</cite>
+			<div class="review__social">
+				<a href="." class="review__link"><img src="img/group.png" class="review__img" alt="groupon"></a>
+				<a href="." class="review__link"><img src="img/drop.png" class="review__img" alt="drop"></a>
+				<a href="." class="review__link"><img src="img/skype.png" class="review__img" alt="skype"></a>
+				<a href="." class="review__link"><img src="img/four.png" class="review__img" alt="four"></a>
+			</div>
 		</div>
-		<div class="main__social">
 
-		</div>
 		<div class="main__wrap">
 			<section class="about">
 				<ul class="about__list">
-					<li class="about__item"><a>What we do</a>
+					<li class="about__item  about__item--active"><a>What we do</a>
 						<ul class="about__list-inner">
 							<li class="about__item-inner">
+								<img class="about__png"  src="img/computer.png" alt="computer">
 								<p class="about__inner-text">
 									Donec sed nunc in lacus fermentum ultrices ut eu turpis. Quisque sodales turpis ut risus dignissim non auctor velit malesuada. Nunc tristique mi ac turpis placerat quis sollicitudin metus condimentum.
 								</p>
 								<a href="." class="about__read-more  btn-more">Read more</a>
 							</li>
 							<li class="about__item-inner">
+								<img class="about__png"  src="img/cut.png" alt="cut">
 								<p class="about__inner-text">Lacus fermentum ultrices ut eu turpis. Quisque sodales turpis ut risus dignissim non auctor velit malesuada. Nunc tristique mi ac turpis placerat quis sollicitudin metus condimentum.
 								</p>
 								<a href="." class="about__read-more  btn-more">Read more</a>
 							</li>
 							<li class="about__item-inner">
+								<img class="about__png"  src="img/graph.png" alt="graph">
 								<p class="about__inner-text">
 									Nunc tristique mi ac turpis placerat quis sollicitudin metus condimentum. Donec sed nunc in lacus fermentum ultrices ut eu turpis. Quisque sodales turpis ut risus dignissim non auctor velit malesuada.
 								</p>
@@ -134,13 +142,34 @@
 		</div>
 	</main>
 	<footer class="footer">
-		<div class="footer-contact">
+		<div class="footer-contact  footer-contact--tw">
+			<h3 class="footer-contact__header">Twitter Updates</h3>
+			<p class="footer-contact__text">Nunc tristique mi ac turpis placerat quis sollicitudin metus condimentum. <span class="footer-contact__text  footer-contact__text--blue">#Donec sed nunc in lacus fermentum ultrices</span> ut eu turpis. Quisque sodales turpis ut risus dignissim non auctor velit malesuada. <span class="footer-contact__text  footer-contact__text--black">10 Days ago</span></p>
+			<p class="footer-contact__text">Nunc tristique mi ac turpis placerat quis sollicitudin metus condimentum. <span class="footer-contact__text  footer-contact__text--blue">#Donec sed nunc in lacus fermentum ultrices</span> ut eu turpis. Quisque sodales turpis ut risus dignissim non auctor velit malesuada. <span class="footer-contact__text  footer-contact__text--black">10 Days ago</span></p>
+		</div>
+		<div class="footer-contact  footer-contact--sign">
+			<h3 class="footer-contact__header  footer-contact__header--sign">Newsletter Signup</h3>
+			<p class="footer-contact__text">Cras volutpat, ante ac gravida iaculis, dui lacus iaculis nibh, eu scelerisque arcu diam a augue. Donec imperdiet pharetra fringilla. Suspendisse ut felis sed libero iaculis blandit.</p>
+			<label class="footer-contact__label"><span>Your email address</span>
+				<input class="footer-contact__input" type="email" name="email">
+				<input class="footer-contact__submit" type="submit" value="Submit">
+			</label>
+		</div>
+		<div class="footer-contact  footer-contact--tel">
 			<h3 class="footer-contact__header">Contact us</h3>
 			<ul class="footer-contact__list">
 				<li class="footer-contact__item"><a href="tel:888-5555" class="footer-contact__link  footer-contact__link--tel">888-5555</a></li>
 				<li class="footer-contact__item"><a href="tel:888-5556" class="footer-contact__link  footer-contact__link--fax">888-5556</a></li>
 				<li class="footer-contact__item"><a href="mailto:yourmail@mail.com" class="footer-contact__link  footer-contact__link--mail">youremail@email.com</a></li>
 			</ul>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer-bottom__rights">All rights reserved &#169;</div>
+			<div class="footer-bottom__social">
+				<span class="footer-bottom__follow">Follow us</span>
+				<img src="img/fb.png" alt=""  width="21" height="21">
+				<img src="img/tw.png" alt="">
+			</div>
 		</div>
 	</footer>
 	<script>
