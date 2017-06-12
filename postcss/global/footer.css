@@ -77,3 +77,163 @@
 		background-image: url(./../img/mail.png);
 	}
 }
+
+.footer-contact {
+	&--sign,
+	&--tw {
+		display: none;
+	}
+}
+
+.footer-bottom {
+	display: none;
+}
+
+@media (min-width: $tablet) {
+	.footer {
+		padding-bottom: 0;
+	}
+
+	.footer-contact__header {
+		padding: 1rem 4rem 1rem 3rem;
+
+		font-size: 2rem;
+
+		&::before {
+			top: 0.7rem;
+			left: -0.2rem;
+		}
+
+		&--sign {
+			&::before {
+				background-image: url(./../img/lines.png);
+			}
+		}
+	}
+
+	.footer-contact {
+		position: relative;
+
+		margin: 0 45px 10px;
+
+		&::after {
+			position: absolute;
+
+			width: 100%;
+			height: 2px;
+
+			content: "";
+			background-image: url(./../img/dashed.png);
+		}
+
+		&--tw {
+			display: block;
+		}
+
+		&--sign {
+			display: block;
+
+			&::after {
+				bottom: -15px;
+			}
+		}
+
+		&--tel {
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	.footer-contact__text {
+		font-family: $tahoma;
+		font-size: 0.8rem;
+		line-height: 1.3rem;
+
+		&--blue {
+			color: $blue-link;
+		}
+
+		&--black {
+			display: block;
+
+			padding: 5px 0 15px;
+
+			color: black;
+		}
+	}
+
+	.footer-contact__label {
+		margin: 20px 0 5px;
+
+		display: block;
+
+		span {
+			padding-bottom: 10px;
+
+			display: block;
+
+			font-family: $tahoma;
+			font-size: 0.8rem;
+			line-height: 1.3rem;
+			color: black;
+			text-transform: capitalize;
+		}
+	}
+
+	.footer-contact__input {
+		padding: 7px;
+		margin-right: 20px;
+		width: 250px;
+
+		border: none;
+		border-radius: 5px;
+	}
+
+	.footer-contact__submit {
+		padding: 7px 30px;
+
+		border: none;
+		border-radius: 5px;
+
+		color: white;
+		background: linear-gradient(to bottom, $light-lime, $dark-lime);
+		box-shadow: 0 1px 3px $dark-grey, 0 -2px 5px #818182;
+	}
+	
+	.footer-bottom {
+		height: 67px;
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		background: #bcbdc2 url("./../img/bg-footer-bottom.png") repeat;
+
+		border-top: 3px dotted #e4e3e2;
+	}
+
+	.footer-bottom__rights {
+		color: #6d6f70;
+		font-family: $tahoma;
+		font-size: 0.7rem;
+	}
+
+	.footer-bottom__follow {
+		padding-right: 20px;
+
+		color: #4e960c;
+		font-family: $cookie;
+		font-size: 2rem;
+	}
+
+	.footer-bottom__social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			padding-right: 10px;
+		}
+	}
+}

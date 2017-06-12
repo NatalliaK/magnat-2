@@ -91,6 +91,10 @@
 	cursor: pointer;
 	display: block;
 	font-size: 35px;
+
+	img {
+		display: none;
+	}
 }
 
 .carousel-bullet:hover {
@@ -101,4 +105,33 @@
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
 	color: #428bca;
+}
+
+@media (min-width: $big-mob) {
+	.carousel-bullet {
+		img {
+			width: 60px;
+			height: 60px;
+			margin: 0 2vw;
+
+			display: block;
+		}
+	}
+}
+
+@media (min-width: $tablet) {
+	.carousel-control {
+		top: 30%;
+	}
+
+	.carousel-indicators {
+		bottom: 23%;
+	}
+
+	.carousel-bullet {
+		img {
+			width: 80px;
+			height: 80px;
+		}
+	}
 }

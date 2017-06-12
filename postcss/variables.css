@@ -1,5 +1,6 @@
 $grey-txt: #d1d3d5;
 $blue: #2b3a41;
+$blue-link: #2560a2;
 $lime: #9cd249;
 $grey-txt-cursive: #fdfdfd;
 $light-lime: #bde96c;
@@ -10,3 +11,6 @@ $grey-shadow: #949494;
 $light-grey: #ededed;
 $dark-grey: #cecece;
 $lime-shadow: #456a1c;
+$big-mob: 544px;
+$tablet: 768px;
+$desk: 1200px;
